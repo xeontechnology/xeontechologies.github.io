@@ -22,7 +22,19 @@
         background-position:center;
         background-repeat: no-repeat;
         background-size: cover;
-        height:80vh;
+        height:90vh;
+      }
+
+      /* media queries for the background hero image */
+      @media  only screen and (max-width: 480px) {
+        .jumbotron{
+          color:white;
+          background-image: url("./images/banner5.jpg");
+          background-position:center;
+          background-repeat: no-repeat;
+          background-size: cover;
+          height:50%;
+        }
       }
       
     </style>
@@ -100,7 +112,7 @@
           <ul class="carousel-indicators">
             <li data-target="#heroSlider" data-slide-to="0" class="active"></li>
             <li data-target="#heroSlider" data-slide-to="1"></li>
-            <li data-target="heroSlider" data-slide-to="2"></li>
+            <li data-target="#heroSlider" data-slide-to="2"></li>
           </ul>
         
           <!-- The slideshow -->
@@ -116,17 +128,17 @@
             <div class="carousel-item">
               <h2 class="display6 text-white">Providing Intelligent Solutions</h2>
               <p class="text-light text-justify">
-                We are committed to driving digital transformation and deliverin tangible for our clients accross various sectors. 
+                We are committed to driving digital transformation and delivering tangible for our clients accross various sectors. 
               </p>
-              <a href="#" class="btn btn-small bg-success">Get a QUOTE</a>
+              <a href="contactus.html" class="btn btn-small bg-success text-white">Get Started</a>
             </div>
             <div class="carousel-item">
-              <h2 class="display6 text-white">Hero Title One</h2>
+              <h2 class="display6 text-white">At the pinacle of Innovation</h2>
               <p class="text-light text-justify">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti repellendus saepe repellat aperiam 
-                  possimus? Eos suscipit maiores eum exercitationem voluptatibus. 
+                Highly-targeted, actionable offself and tailor-made solutions for your 
+                personal and business needs.  
               </p>
-              <a href="#" class="btn btn-md btn-outline-light bg-success">Get a QUOTE</a>
+              <a href="contactus.html" class="btn btn-md bg-success text-white">Get  Started</a>
             </div>
           </div>
         
@@ -155,7 +167,7 @@
             <p class="text-justify text-secondary ">
               We are an IoT company based in Uganda, specializing in developing intelligent solutions that connect people, businesses,
               devices and data. With a deep understanind of the African landscape, we are committed to driving digital transformation 
-              and deliverin tangible for our clients accross various sectors. We make running your daily business and personal needs 
+              and delivering tangible for our clients accross various sectors. We make running your daily business and personal needs 
               easy and seamless. We specialize in providing highly-targeted, actionable offself and tailor-made solutions for your 
               personal and business needs.
 
@@ -331,7 +343,7 @@
           </div>
         </div>
 
-        <div class="col-md-4 col-sm-4 mt-2 mb-2 pt-2 pb-2">
+        <!-- <div class="col-md-4 col-sm-4 mt-2 mb-2 pt-2 pb-2">
           <div class="card bg-white ">
             <img src="./images/innovation4.png" class="card-img-top" alt="avatar">
             <div class="card-body">
@@ -370,7 +382,7 @@
               <a href="#" class="btn btn-small btn-success">Learn more</a>
             </div>
           </div>
-        </div>
+        </div> -->
       </div>
     </div>
   
@@ -611,10 +623,10 @@
       });
     } // end if
   });
-  $(".jumbotron").css({height:$(window).height() + "px"});
-  $(window).on("resize", function() {
-    $(".jumbotron").css({height:$(window).height() + "px"});
-  });
+  // $(".jumbotron").css({height:$(window).height() + "px"});
+  // $(window).on("resize", function() {
+  //   $(".jumbotron").css({height:$(window).height() + "px"});
+  // });
 </script>
 <script>
   $(document).ready(function(){
