@@ -24,6 +24,17 @@
         background-size: cover;
         height:80vh;
       }
+      /* media queries for the background hero image */
+      @media  only screen and (max-width: 480px) {
+        .jumbotron{
+          color:white;
+          background-image: url("./images/banner5.jpg");
+          background-position:center;
+          background-repeat: no-repeat;
+          background-size: cover;
+          height:50%;
+        }
+      }
       
     </style>
 
@@ -68,7 +79,7 @@
                 <div class="dropdown">
                   <a class="nav-link dropbtn" data-toggle="dropdown" href="#">Industries</a>
                   <div class="dropdown-content">
-                    <a class="dropdown-item" href="agriculture.html">Smart Agriculture</a>
+                    <a class="dropdown-item" href="agriculture.html">Smart Cities</a>
                     <a class="dropdown-item" href="#">Healthcare</a>
                     <a class="dropdown-item" href="#">Industrial Automation</a>
                     <a class="dropdown-item" href="#">Transportation | Logistics</a>
@@ -96,7 +107,7 @@
           <div class="container">
             <div class="row">
               <div class="col-md-12 mt-4 pb-4">
-                <h1 class="display-6">Contact Us </h1>
+                <h1 class="display-6">Get a Demo </h1>
                 
               </div>
             </div>
@@ -106,39 +117,90 @@
   <div class="row">
     
     <div class="col-md-12  pt-4 pb-4" id="contactus">
-      <h2 class="text-center text-secondary pb-2 mb-2">How can we help?</h2>
-      <p class="text-center text-success">Reach out today and lets see how we can help</p>
+      <h2 class="text-center text-secondary pb-2 mb-2">Lets Work Together</h2>
       <div class="row">
         <div class="col-md-12 mt-2 mb-2 pt-2 pb-2">
           <div class="row">
-            <div class="col-md-7 mt-2 mb-2 pt-2 pb-2"> 
-                <div class="mapouter">
-                  <div class="gmap_canvas">
-                    <iframe width="100%" height="100%" id="gmap_canvas" src="https://maps.google.com/maps?q=Kampala&t=&z=10&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
-                    <a href="https://2yu.co"></a><br><style>.mapouter{position:relative;text-align:right;height:100%;width:100%;}</style><a href="https://embedgooglemap.2yu.co/"></a><style>.gmap_canvas {overflow:hidden;background:none!important;height:100%;width:100%;}</style>
-                  </div>
-                </div>
+            <div class=" col-md-6 mt-2 mb-2 pt-2 pb-2">
+                <h2 class="text-dark">Book a demo and see how we can help you</h2>
+                <h6 class="text-secondary">Feel out the form to contact us about your needs and your question answered</h6>
             </div>
-            <div class="col-md-5 mt-2 mb-2 pt-2 pb-2">
-              <h6><span class="text-dark small"><i class="fas fa-phone mr-1 pr-1"></i>+256 31 456 8239 | +256 31 456 8239</span></h6>
-              <h6><span class="text-dark small"><i class="fas fa-envelope mr-1 pr-1"></i>info@xeontechnologies.com </span></h6>
-              <h6><span class="text-dark small"><i class="fas fa-map-marker-alt mr-1 pr-1"></i>Kampala, Uganda</span></h6>
-              <div class="card mt-3 pt-2">
+            <div class="col-md-6 mt-2 mb-2 pt-2 pb-2">              
+              <div class="card">
                 <div class="card-body">
                   <form action="#">
-                    <div class="form-group">
-                        <label for="email">Email</label>
-                        <input type="text" class="form-control" id="email" placeholder="Enter email" name="email">
+                    <div class="form-group row">
+                        <div class="col-md-6 mt-1 mb-1 pt-1 pb-1">
+                            <label for="name">First name</label>
+                            <input type="text" class="form-control" id="name" placeholder="Enter Name" name="name">
+                        </div>
+                        <div class="col-md-6 mt-1 mb-1 pt-1 pb-1">
+                            <label for="name">Last name</label>
+                            <input type="text" class="form-control" id="name" placeholder="Enter Name" name="name">
+                        </div>
+                        <div class="col-md-6 mt-1 mb-1 pt-1 pb-1">
+                            <label for="email">Company</label>
+                            <input type="text" class="form-control" id="email" placeholder="Enter email" name="email">
+                        </div>
+                        <div class="col-md-6 mt-1 mb-1 pt-1 pb-1">
+                            <label for="country">Country</label>
+                            <select class="form-control" id="country">
+                                <option>Please select</option>
+                                <option>Uganda</option>
+                            </select>
+                        </div>
+                        <div class="col-md-6 mt-1 mb-1 pt-1 pb-1">
+                            <label for="email">Company email</label>
+                            <input type="text" class="form-control" id="email" placeholder="Enter email" name="email">
+                        </div>
+                        <div class="col-md-6 mt-1 mb-1 pt-1 pb-1">
+                            <label for="phone_number">Phone number</label>
+                            <input type="number" class="form-control" id="phone_number" placeholder="Enter phone number" name="phone_number">
+                        </div>
+                        
+                        <div class="col-md-6 mt-1 mb-1 pt-1 pb-1">
+                            <label for="Job_title">Job title</label>
+                            <input type="text" class="form-control" id="job_title" placeholder="Enter Job title" name="job_title">
+                        </div>
+                        <div class="col-md-6 mt-1 mb-1 pt-1 pb-1">
+                            <label for="job_function">Job role</label>
+                            <select class="form-control" id="job_function">
+                                <option>Please select</option>
+                                <option>Business development</option>
+                                <option>Engineering</option>
+                                <option>Finance</option>
+                                <option>Information</option>
+                                <option>Product management</option>
+                                <option>Sale</option>
+                                <option>Project Management</option>
+                                <option>Finance</option>
+                                <option>Operation</option>
+                                <option>Others</option>
+                            </select>
+                        </div>
+                        <div class="col-md-12 mt-1 mb-1 pt-1 pb-1">
+                            <label for="industry">Industry</label>
+                            <select class="form-control" id="industry">
+                                <option>Please select</option>
+                                <option>Smart Agriculture</option>
+                                <option>Healthcare</option>
+                                <option>Industrial Automation</option>
+                                <option>Transportation | Logistics</option>
+                                <option>Smart Cities</option>
+                                <option>Energy Management</option>
+                            </select>
+                        </div>
+                        <div class="col-md-12 mt-1 mb-1 pt-1 pb-1">
+                            <label for="message">What solution are you looking for?</label>
+                            <select class="form-control" id="country">
+                                <option>Please select</option>
+                                <option>Smart paddocking</option>
+                                <option>Generator monitoring</option>
+                                <option>Fleet Management</option>
+                            </select>
+                        </div>
                     </div>
-                    <div class="form-group">
-                        <label for="name">Name</label>
-                        <input type="text" class="form-control" id="name" placeholder="Enter Name" name="name">
-                    </div>
-                    <div class="form-group">
-                      <label for="message">Message</label>
-                        <textarea class="form-control" id="message" placeholder="Enter message" name="email"></textarea>
-                    </div>
-                    <button type="submit" class="btn btn-success">Send</button>
+                    <button type="submit" class="btn btn-success">Get Demo</button>
                   </form>
                 </div>
               </div>
