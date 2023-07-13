@@ -1,6 +1,6 @@
 <!DOCTYPE HTML><html>
 <head>
-    <title>Xeon Technologies | Facilities</title>
+    <title>Xeon Technologies | Industry Automation</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="icon" href="data:,">
@@ -23,6 +23,17 @@
         background-repeat: no-repeat;
         background-size: cover;
         height:90vh;
+      }
+      /* media queries for the background hero image */
+      @media  only screen and (max-width: 480px) {
+        .jumbotron{
+          color:white;
+          background-image: url("./images/banner5.jpg");
+          background-position:center;
+          background-repeat: no-repeat;
+          background-size: cover;
+          height:50%;
+        }
       }
     </style>
 
@@ -67,12 +78,12 @@
         <div class="dropdown">
           <a class="nav-link dropbtn active" data-toggle="dropdown" href="#">Industries</a>
           <div class="dropdown-content">
-            <a class="dropdown-item" href="agriculture.html">Smart Agriculture</a>
-            <a class="dropdown-item" href="#">Healthcare</a>
-            <a class="dropdown-item" href="#">Industrial Automation</a>
-            <a class="dropdown-item" href="#">Transportation | Logistics</a>
-            <a class="dropdown-item" href="#">Smart Cities</a>
-            <a class="dropdown-item" href="#">Energy Management</a>
+            <a class="dropdown-item" href="agriculture.html">Smart Cities</a>
+            <a class="dropdown-item" href="health.html">Healthcare</a>
+            <a class="dropdown-item" href="facilities.html">Industrial Automation</a>
+            <a class="dropdown-item" href="logistics.html">Transportation | Logistics</a>
+            <a class="dropdown-item" href="smart_cities.html">Smart Cities</a>
+            <a class="dropdown-item" href="enery_management.html">Energy Management</a>
           </div>
         </div>
       </li>
@@ -95,7 +106,7 @@
   <div class="container">
     <div class="row">
       <div class="col-md-8 mt-4 pb-4">
-        <h1 class="display-6">Smart Agriculture</h1>
+        <h1 class="display-6">Industry Automation</h1>
         <p class="text-strong"> 
             Manage your farms using modern Information and communication technologies to increase the quantity and quality of products 
             while optimizing the human labor required</p>
@@ -119,7 +130,36 @@
             farmers can boost the effectiveness of pesticides and fertilizers, or use them selectively.
            </p>         
         </div>
-        <div class="col-md-5 bg-white">
+        <div class="col-md-5 bg-white pt-4 pb-4">
+          <div class="row">
+            <div class="col-md-6 col-sm-6 mt-3 pt-3">
+                <div class="progress-circle blue">
+                    <span class="progress-left">
+                        <span class="progress-bar"></span>
+                    </span>
+                    <span class="progress-right">
+                        <span class="progress-bar"></span>
+                    </span>
+                    <div class="progress-value">90%</div>
+                </div>
+                <h5 class="text-center">Lorem ispum</h5>
+            </div>
+     
+            <div class="col-md-6 col-sm-6 mt-3 pt-3">
+                <div class="progress-circle yellow">
+                    <span class="progress-left">
+                        <span class="progress-bar"></span>
+                    </span>
+                    <span class="progress-right">
+                        <span class="progress-bar"></span>
+                    </span>
+                    <div class="progress-value">75%</div>
+                </div>
+                <h5 class="text-center">Lorem ispum</h5>
+            </div>
+          </div>
+        </div>
+        <!-- <div class="col-md-5 bg-white">
             <h4 class="text-secondary">Our solutions</h4>
             <ul class="text-secondary">
                 <li><b>Precision livestock farming</b></li>
@@ -130,13 +170,13 @@
                 <li><b>Agriculture drones</b></li>
                 <p>Get text alerts for stray/stolen or downed animals</p>
             </ul>
-        </div>
+        </div> -->
       </div>
     </div>
 
     <div class="col-md-12 bg-white pt-4 pb-4">
         <div class="row">
-            <div class="col-md-4 col-sm-4">
+            <div class="col-md-4 col-sm-6 mt-2 mb-2 pt-2 pb-2">
                 <div class="card bg-white">
                     <div class="card-body">
                         <h4 class="">Intervention or a proportional control mechanism,</h4>
@@ -148,7 +188,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-4 col-sm-4">
+            <div class="col-md-4 col-sm-6 mt-2 mb-2 pt-2 pb-2">
                 <div class="card bg-white">
                     <div class="card-body">
                         <h4 class="">Animal theft, illness and activity</h4>
@@ -159,7 +199,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-4 col-sm-4">
+            <div class="col-md-4 col-sm-12 mt-2 mb-2 pt-2 pb-2">
                 <div class="card bg-white">
                     <div class="card-body">
                         <h4 class="">crop health assessment, irrigation, crop monitoring, soil and field analysis</h4>
@@ -317,13 +357,18 @@
         </div>
       </div>
     </div>
-
-    <div class="col-md-12  pt-4 pb-4 bg-light" id="contactus">
-      <h2 class="text-center text-success">Connect With US</h2>
-      <div class="row">
-        <div class="col-md-12 text-center">
-          <h5 class="text-center text-secondary">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla tempor facilisis pellentesque.</h5>
-          <a href="contactus.html" class="btn btn-small btn-success mt-3">Get started</a>
+  </div>
+</div>
+<div class="container-fluid bg-light">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12  pt-4 pb-4" id="contactus">
+        <h2 class="text-center text-success">Connect With US</h2>
+        <div class="row">
+          <div class="col-md-7 text-center mx-auto">
+            <h6 class="text-center text-secondary">Ready to unlock the full potential of your IoT in Africa and shape brighter future for your business</h6>
+            <a href="get_a_demo.html" class="btn btn-small btn-success mt-3">Get started</a>
+          </div>
         </div>
       </div>
     </div>
@@ -356,17 +401,17 @@
       <hr class="clearfix w-100 d-md-none pb-3">
 
       <!-- Grid column -->
-      <div class="col-md-3 mb-md-0 mb-3">
+      <div class="col-md-3 mb-md-0 mb-3 text-left">
 
         <!-- Links -->
         <h5 class="text-uppercase">Industries we serve</h5>
 
         <ul class="list-unstyled">
           <li>
-            <a href="#!" class="link text-white">Agritech</a>
+            <a href="agriculture.html" class="link text-white">Agriculture</a>
           </li>
           <li>
-            <a href="#!"class="link text-white">Fleet Monitoring</a>
+            <a href="#!"class="link text-white">Fleet/Mobility</a>
           </li>
           <li>
             <a href="#!" class="link text-white">Data Analytics</a>
@@ -380,7 +425,7 @@
       <!-- Grid column -->
 
       <!-- Grid column -->
-      <div class="col-md-3 mb-md-0 mb-3 text-center">
+      <div class="col-md-3 mb-md-0 mb-3 text-left">
 
         <!-- Links -->
         <h5 class="text-uppercase">Quick Links</h5>
@@ -390,28 +435,28 @@
             <a href="index.html" class="link text-white">Home</a>
           </li>
           <li>
-            <a href="products.html" class="link text-white">Solution</a>
+            <a href="#" class="link text-white">Solutions</a>
           </li>
           <li>
-            <a href="solutions.html" class="link text-white">Products</a>
+            <a href="#" class="link text-white">Products</a>
           </li>
           <li>
-            <a href="index.html"class="link text-white">Company</a>
+            <a href="contactus.html"class="link text-white">Contactus</a>
           </li>
         </ul>
 
       </div>
       <!-- Grid column -->
       <!-- Grid column -->
-      <div class="col-md-3 mb-md-0 mb-3 text-center">
+      <div class="col-md-3 mb-md-0 mb-3 text-left">
         <h5 class="text-uppercase">Other Services</h5>
         <ul class="list-unstlyed" style="display:unstyled">
-          <li>ECAD & MCAD</li>
-          <li>Product design</li>
           <li>CCTV Camera Installation</li>
           <li>Security System installation</li>
           <li>Industrial Automation</li>
           <li>Home Automation</li>
+          <li>ECAD & MCAD</li>
+          <li>Product design</li>
         </ul>
       
       </div>
@@ -427,10 +472,31 @@
         <a href="#" class="text-light mr-1 pr-1"><i class="fab fa-instagram fa-lg"></i></a>
         <a href="#" class="text-light mr-1 pr-1"><i class="fab fa-twitter fa-lg"></i></a>
         <a href="#" class="text-light mr-1 pr-1"><i class="fab fa-facebook-f fa-lg"></i></a> ©2023 Copyright |
-    <a href="index.html" class=""> XeonTechnologies</a>
+    <a href="index.html" class="link text-success"> XeonTechnologies</a>
   </div>
   <!-- Copyright -->
 
 </footer>
 </body>
 </html>
+<script>
+  // Get the button:
+let mybutton = document.getElementById("topBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0; // For Safari
+  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+}
+</script>
